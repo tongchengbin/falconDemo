@@ -1,9 +1,10 @@
 import falcon
 import logging
 from utils.db import POOL
+from utils.viewset import BaseViewSet
 
 
-class ThingsResource(object):
+class ThingsResource(BaseViewSet):
 
     def __init__(self,db=None):
         self.logger = logging.getLogger('falconDemo.app.views' + __name__)

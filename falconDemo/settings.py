@@ -4,7 +4,7 @@ import os
 
 class Base:
     APP_ENV = "Base"
-
+    SECRET_KEY = 'z2znv!q2ava#-$15odzy4^j*6at@&*z2wa_vv_@cu%n8mxn#v='
     LOGGING = {'version': 1, 'disable_existing_loggers': False,
                'formatters': {'default': {'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'},
                    'simple': {'format': '[%(asctime)s] [%(levelname)s] %(message)s'}},
