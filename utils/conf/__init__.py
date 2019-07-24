@@ -49,7 +49,6 @@ class LazySettings(object):
             config = import_string2(settings_module)
         except:
             config = import_string(settings_module)
-        print(config)
         self.config = config
         self.set_logger()
     

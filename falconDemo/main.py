@@ -8,7 +8,6 @@ class App(falcon.API):
         
     
     
-    
 middleware = []
 router=scan_url('falconDemo.urls.urlpatterns')
 app = App(middleware=middleware,router=router)
