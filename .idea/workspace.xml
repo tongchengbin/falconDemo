@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca5d4b8b-1579-42c2-92a7-c4152a2345a2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/baseView.py" afterPath="$PROJECT_DIR$/app/views/baseView.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/falconDemo/__init__.py" afterPath="$PROJECT_DIR$/falconDemo/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/falconDemo/main.py" afterPath="$PROJECT_DIR$/falconDemo/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/falconDemo/settings.py" afterPath="$PROJECT_DIR$/falconDemo/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/conf/__init__.py" afterPath="$PROJECT_DIR$/utils/conf/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/conf/management.py" afterPath="$PROJECT_DIR$/utils/conf/management.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/core/loader.py" afterPath="$PROJECT_DIR$/utils/core/loader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/db/__init__.py" afterPath="$PROJECT_DIR$/utils/db/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/falconDemo/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -126,14 +117,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/falconDemo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#1462#1478#0" expanded="false" />
-                <element signature="e#1502#1518#0" expanded="false" />
+                <element signature="e#1341#1357#0" expanded="false" />
+                <element signature="e#1381#1397#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -171,13 +162,13 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/utils/conf/management.py" />
         <option value="$PROJECT_DIR$/utils/conf/__init__.py" />
-        <option value="$PROJECT_DIR$/falconDemo/settings.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/app/views/baseView.py" />
         <option value="$PROJECT_DIR$/utils/db/__init__.py" />
         <option value="$PROJECT_DIR$/falconDemo/main.py" />
         <option value="$PROJECT_DIR$/utils/core/loader.py" />
         <option value="$PROJECT_DIR$/falconDemo/__init__.py" />
+        <option value="$PROJECT_DIR$/falconDemo/settings.py" />
       </list>
     </option>
   </component>
@@ -534,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563949049586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="优化db链接">
+      <created>1563952520965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563952520965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -571,7 +569,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目添加多环境文件配置  自动加载" />
     <MESSAGE value="路由自动扫描" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="优化db链接" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化db链接" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,17 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/falconDemo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#1462#1478#0" expanded="false" />
-            <element signature="e#1502#1518#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/baseView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -946,6 +934,17 @@
           <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/falconDemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#1341#1357#0" expanded="false" />
+            <element signature="e#1381#1397#0" expanded="false" />
           </folding>
         </state>
       </provider>

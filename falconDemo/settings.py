@@ -22,7 +22,6 @@ class Base:
 class Dev(Base):
     APP_ENV = "Dev"
 
-    DATABASES = {'database': 'esb', 'user': 'fiyin', 'password': 'fiyin@118', 'host': 'test.pinbayun.com', 'port': 3306}
 
 class Prod(Base):
     APP_ENV = "Prod"
