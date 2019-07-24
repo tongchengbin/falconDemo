@@ -1,0 +1,5 @@
+falcon==2.0.0
+redis==2.10.6
+PyMySQL==0.9.3
+
+
