@@ -12,7 +12,6 @@ def import_string(dotted_path):
         module_path, class_name = dotted_path.rsplit('.', 1)
     except ValueError as err:
         raise ImportError("%s doesn't look like a module path" % dotted_path) from err
-    
     module = import_module(module_path)
     
     try:
@@ -45,12 +44,9 @@ class LazySettings(object):
     
     def _setup(self, argv=None):
         settings_module = os.environ.get(ENVIRONMENT_VARIABLE)
-        try:
-            config = import_string2(settings_module)
-        except:
-            config = import_string(settings_module)
-        self.config = config
+        self.config = self.get_config(settings_module)
         self.set_logger()
+        
     
     def set_logger(self):
         configure_logging("logging.config.dictConfig", self.config.LOGGING)
@@ -61,7 +57,10 @@ class LazySettings(object):
     def __getattr__(self, name):
         """Return the value of a setting and cache it in self.__dict__."""
         if self.config is None:
-            raise ImportError("config not setup")
+            try:
+                self._setup()
+            except Exception as e:
+                raise ImportError("config not setup:%s"%e)
         val = getattr(self.config, name)
         self.__dict__[name] = val
         return val
@@ -77,6 +76,12 @@ class LazySettings(object):
         #         self.__dict__.pop(name, None)
         #     super().__setattr__(name, value)
         #
-
+    def get_config(self,settings_module):
+        config=None
+        try:
+            config = import_string(settings_module)
+        except Exception as e:
+            config = import_string2(settings_module)
+        return config
 
 settings = LazySettings()

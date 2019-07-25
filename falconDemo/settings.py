@@ -23,6 +23,7 @@ class Base:
     
                }
     DATABASES = {'database': 'ssm', 'user': 'ssm', 'password': '123456', 'host': '47.107.75.121', 'port': 3306}
+    BROKER_URL = 'redis://localhost:6379'
 class Dev(Base):
     APP_ENV = "Dev"
 

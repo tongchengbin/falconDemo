@@ -3,8 +3,9 @@
 '''
 import redis
 import pickle
+from utils.conf import settings
 
-cache = redis.Redis("127.0.0.1")
+cache = redis.Redis(settings.BROKER_URL)
 ''''原生的缓存'''
 class Pcache:
     def set(self,name,val):
