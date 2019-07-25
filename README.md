@@ -20,6 +20,17 @@
     ├─db        数据库操作
 ```
 
+### Start
+```
+python manage.py
+```
+
+#### 使用Celery
+
+启动方式
+```
+celery -A tasks.celery worker -l info
+```
 
 
 # Todo
@@ -36,10 +47,4 @@
 - [x] 整合Celery
 
 
-#### 使用Celery
-
-启动方式
-```
-celery -A tasks.celery worker -l info
-```
 
