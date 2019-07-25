@@ -33,4 +33,13 @@
 - [x] 登录登出
 - [x] 身份验证
 - [x] 添加缓存模块
+- [x] 整合Celery
+
+
+#### 使用Celery
+
+启动方式
+```
+celery -A tasks.celery worker -l info
+```
 
